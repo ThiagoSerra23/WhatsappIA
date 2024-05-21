@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8081";
-//builder.WebHost.UseUrls($"http://localhost:{port}");
+var port = Environment.GetEnvironmentVariable("PORT") ?? "3000";
+builder.WebHost.UseUrls($"http://localhost:{port}");
 // Add services to the container.
 
 builder.Services.AddControllers();
