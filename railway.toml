@@ -1,0 +1,7 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "./src/WhatsappAI.API/Dockerfile"
+
+[deploy]
+startCommand = "dotnet WhatsappAI.API.dll"
+restartPolicyType = "never"
